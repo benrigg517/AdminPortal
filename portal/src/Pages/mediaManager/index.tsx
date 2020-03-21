@@ -19,14 +19,14 @@ const Media = () => {
     return (
         <div className={classes.root}>
             <input
-                accept="image/*"
+                accept='image/*'
                 className={classes.input}
-                id="contained-button-file"
+                id='contained-button-file'
                 multiple
-                type="file"
+                type='file'
             />
-            <label htmlFor="contained-button-file">
-                <Button variant="contained" color="primary" component="span">
+            <label htmlFor='contained-button-file'>
+                <Button variant='contained' color='primary' component='span'>
                     Upload
                 </Button>
             </label>

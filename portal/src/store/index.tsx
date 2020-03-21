@@ -42,6 +42,5 @@ load(store);
 
 // Notice that our load function will return a promise that can also be used
 // to respond to the restore event.
-load(store).then(newState => console.log("Loaded state:", newState));
 
 export { store, persistor };

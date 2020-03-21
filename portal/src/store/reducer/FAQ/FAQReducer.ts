@@ -13,7 +13,6 @@ export const FAQReducer = (
                 ...state,
                 { question: action.question, answer: action.answer }
             ];
-            console.log(newData);
             return newData;
         case FAQActions.removeFAQ:
             let currentState = [...state];
@@ -22,8 +21,6 @@ export const FAQReducer = (
         case FAQActions.editFAQ:
             let thisState = [...state];
             for (let i = 0; thisState[i]; i++) {
-                console.log(action.newData.question);
-                console.log(action.newData.answer);
                 if (
                     thisState[i].question === action.oldData.question &&
                     thisState[i].answer === action.oldData.answer

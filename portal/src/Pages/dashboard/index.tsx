@@ -62,18 +62,18 @@ const Dashboard = () => {
     return (
         <div>
             <CssBaseline />
-            <AppBar position="fixed" className={classes.appBar}>
+            <AppBar position='fixed' className={classes.appBar}>
                 <Toolbar className={classes.Bar}>
                     <div>
-                        <Typography variant="h6" noWrap>
+                        <Typography variant='h6' noWrap>
                             Admin Portal
                         </Typography>
                     </div>
                     <div className={classes.button}>
                         <NavLink to={RouteKeys.SignIn} className={classes.link}>
                             <Button
-                                variant="contained"
-                                color="default"
+                                variant='contained'
+                                color='default'
                                 endIcon={<LockIcon />}
                                 onClick={onLogout}
                             >
@@ -85,11 +85,11 @@ const Dashboard = () => {
             </AppBar>
             <Drawer
                 className={classes.drawer}
-                variant="permanent"
+                variant='permanent'
                 classes={{
                     paper: classes.drawerPaper
                 }}
-                anchor="left"
+                anchor='left'
             >
                 <div className={classes.toolbar} />
                 <List>

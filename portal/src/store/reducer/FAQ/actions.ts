@@ -1,7 +1,7 @@
 import { FAQActions } from "./action-types";
 import { QuestionAndAnswerInterface } from "./interfaces";
 
-export function SetFAQ(question: string, answer: string) {
+export function SetFAQ (question: string, answer: string) {
     return {
         type: FAQActions.addFAQ,
         question: question,
@@ -9,14 +9,14 @@ export function SetFAQ(question: string, answer: string) {
     };
 }
 
-export function DeleteFAQ(oldData: QuestionAndAnswerInterface) {
+export function DeleteFAQ (oldData: QuestionAndAnswerInterface) {
     return {
         type: FAQActions.removeFAQ,
         oldData: oldData
     };
 }
 
-export function EditFAQ(
+export function EditFAQ (
     oldData: QuestionAndAnswerInterface,
     newData: QuestionAndAnswerInterface
 ) {

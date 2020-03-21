@@ -45,7 +45,7 @@ export const Routes = () => {
                                     path={RouteKeys.Home}
                                     component={Home}
                                 />
-                                <Route exact path="/">
+                                <Route exact path='/'>
                                     <Redirect to={RouteKeys.Home} />
                                 </Route>
                                 <Route
@@ -78,7 +78,7 @@ export const Routes = () => {
                             path={RouteKeys.SignIn}
                             component={SignIn}
                         />
-                        <Route exact path="/">
+                        <Route exact path='/'>
                             <Redirect to={RouteKeys.SignIn} />
                         </Route>
                         <Route

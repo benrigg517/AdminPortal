@@ -68,28 +68,28 @@ const SignIn = () => {
     };
     return (
         <div className={classes.content}>
-            <Typography variant="h5" color="inherit">
+            <Typography variant='h5' color='inherit'>
                 Admin Portal
             </Typography>
             <div className={classes.content}>
-                <Paper variant="outlined" square={false}>
+                <Paper variant='outlined' square={false}>
                     <div className={classes.LoginBox}>
                         <form
                             className={classes.root}
                             noValidate
-                            autoComplete="off"
+                            autoComplete='off'
                         >
                             <div className={classes.input}>
                                 <FormControl>
-                                    <InputLabel htmlFor="input-with-icon-adornment">
+                                    <InputLabel htmlFor='input-with-icon-adornment'>
                                         UserName
                                     </InputLabel>
                                     <Input
                                         required={true}
-                                        id="input-with-icon-adornment"
+                                        id='input-with-icon-adornment'
                                         value={userName}
                                         startAdornment={
-                                            <InputAdornment position="start">
+                                            <InputAdornment position='start'>
                                                 <AccountCircle />
                                             </InputAdornment>
                                         }
@@ -101,7 +101,7 @@ const SignIn = () => {
                             </div>
                             <div className={classes.input}>
                                 <FormControl>
-                                    <InputLabel htmlFor="input-with-icon-adornment">
+                                    <InputLabel htmlFor='input-with-icon-adornment'>
                                         Password
                                     </InputLabel>
                                     <Input
@@ -112,16 +112,16 @@ const SignIn = () => {
                                                 ? "text"
                                                 : "password"
                                         }
-                                        id="input-with-icon-adornment"
+                                        id='input-with-icon-adornment'
                                         startAdornment={
-                                            <InputAdornment position="start">
+                                            <InputAdornment position='start'>
                                                 <LockIcon />
                                             </InputAdornment>
                                         }
                                         endAdornment={
-                                            <InputAdornment position="end">
+                                            <InputAdornment position='end'>
                                                 <IconButton
-                                                    aria-label="toggle password visibility"
+                                                    aria-label='toggle password visibility'
                                                     onClick={() =>
                                                         setPasswordVisable(
                                                             !passwordVisable
@@ -134,8 +134,8 @@ const SignIn = () => {
                                                     {passwordVisable ? (
                                                         <Visibility />
                                                     ) : (
-                                                        <VisibilityOff />
-                                                    )}
+                                                            <VisibilityOff />
+                                                        )}
                                                 </IconButton>
                                             </InputAdornment>
                                         }
@@ -150,15 +150,15 @@ const SignIn = () => {
                                     to={RouteKeys.SignUp}
                                     className={classes.link}
                                 >
-                                    <Button variant="contained" color="default">
+                                    <Button variant='contained' color='default'>
                                         Create User
                                     </Button>
                                 </NavLink>
                             </div>
                             <div className={classes.input}>
                                 <Button
-                                    variant="contained"
-                                    color="default"
+                                    variant='contained'
+                                    color='default'
                                     endIcon={<LockIcon />}
                                     onClick={onLogin}
                                 >
