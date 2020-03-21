@@ -70,14 +70,16 @@ const Dashboard = () => {
                         </Typography>
                     </div>
                     <div className={classes.button}>
-                        <Button
-                            variant="contained"
-                            color="default"
-                            endIcon={<LockIcon />}
-                            onClick={onLogout}
-                        >
-                            Logout
-                        </Button>
+                        <NavLink to={RouteKeys.SignIn} className={classes.link}>
+                            <Button
+                                variant="contained"
+                                color="default"
+                                endIcon={<LockIcon />}
+                                onClick={onLogout}
+                            >
+                                Logout
+                            </Button>
+                        </NavLink>
                     </div>
                 </Toolbar>
             </AppBar>
