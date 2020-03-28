@@ -1,3 +1,4 @@
 export enum AppActions {
-    login = "login"
+    login = "login",
+    SetLoading = "SetLoading"
 }

@@ -81,12 +81,12 @@ const SignIn = () => {
                         >
                             <div className={classes.input}>
                                 <FormControl>
-                                    <InputLabel htmlFor='input-with-icon-adornment'>
+                                    <InputLabel htmlFor='UserName'>
                                         UserName
                                     </InputLabel>
                                     <Input
                                         required={true}
-                                        id='input-with-icon-adornment'
+                                        id='UserName'
                                         value={userName}
                                         startAdornment={
                                             <InputAdornment position='start'>
@@ -101,7 +101,7 @@ const SignIn = () => {
                             </div>
                             <div className={classes.input}>
                                 <FormControl>
-                                    <InputLabel htmlFor='input-with-icon-adornment'>
+                                    <InputLabel htmlFor='Password'>
                                         Password
                                     </InputLabel>
                                     <Input
@@ -112,7 +112,7 @@ const SignIn = () => {
                                                 ? "text"
                                                 : "password"
                                         }
-                                        id='input-with-icon-adornment'
+                                        id='Password'
                                         startAdornment={
                                             <InputAdornment position='start'>
                                                 <LockIcon />
