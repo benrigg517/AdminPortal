@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import LockIcon from "@material-ui/icons/Lock";
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import LockIcon from '@material-ui/icons/Lock';
 import {
     FormControl,
     InputLabel,
@@ -11,52 +11,52 @@ import {
     Paper,
     Typography,
     IconButton
-} from "@material-ui/core";
-import { Login } from "../../store/reducer/App/actions";
-import { useDispatch } from "react-redux";
-import Visibility from "@material-ui/icons/Visibility";
-import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import { NavLink } from "react-router-dom";
-import { RouteKeys } from "../../Router/RoutePaths";
+} from '@material-ui/core';
+import { Login } from '../../store/reducer/App/actions';
+import { useDispatch } from 'react-redux';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import { NavLink } from 'react-router-dom';
+import { RouteKeys } from '../../Router/RoutePaths';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        "& .MuiTextField-root": {
+        '& .MuiTextField-root': {
             margin: theme.spacing(1),
             width: 200
         }
     },
     content: {
-        display: "flex",
-        justifyContent: "center",
+        display: 'flex',
+        justifyContent: 'center',
         flex: 1,
-        flexDirection: "column",
-        height: "500px",
-        alignItems: "center",
-        color: "#ab3040"
+        flexDirection: 'column',
+        height: '500px',
+        alignItems: 'center',
+        color: '#ab3040'
     },
     input: {
-        padding: "30px",
-        backgroundColor: "white"
+        padding: '30px',
+        backgroundColor: 'white'
     },
     createUser: {
-        paddingLeft: "30px",
-        backgroundColor: "white"
+        paddingLeft: '30px',
+        backgroundColor: 'white'
     },
     LoginBox: {
-        padding: "10%",
-        backgroundColor: "#ab3040"
+        padding: '10%',
+        backgroundColor: '#ab3040'
     },
     link: {
-        color: "black"
+        color: 'black'
     }
 }));
 
 const SignUp = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
-    const [userName, setUserName] = useState("");
-    const [password, setPassword] = useState("");
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
     const [passwordVisable, setPasswordVisable] = useState(false);
 
     const onLogin = () => {
@@ -108,8 +108,8 @@ const SignUp = () => {
                                         value={password}
                                         type={
                                             passwordVisable
-                                                ? "text"
-                                                : "password"
+                                                ? 'text'
+                                                : 'password'
                                         }
                                         id='input-with-icon-adornment'
                                         startAdornment={

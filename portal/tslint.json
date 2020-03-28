@@ -101,7 +101,7 @@
         "one-variable-per-declaration": false,
         "quotemark": [
             true,
-            "double",
+            "single",
             "avoid-escape",
             "jsx-single"
         ],

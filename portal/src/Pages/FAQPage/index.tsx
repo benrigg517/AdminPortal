@@ -1,14 +1,14 @@
-import React from "react";
-import Table from "../../Components/Table/index.js";
-import { QuestionAndAnswerInterface } from "../../store/reducer/FAQ/interfaces.js";
-import { useSelector, useDispatch } from "react-redux";
-import { State } from "../../store/interfaces.js";
-import { SetFAQ, DeleteFAQ, EditFAQ } from "../../store/reducer/FAQ/actions";
+import React from 'react';
+import Table from '../../Components/Table/index.js';
+import { QuestionAndAnswerInterface } from '../../store/reducer/FAQ/interfaces.js';
+import { useSelector, useDispatch } from 'react-redux';
+import { State } from '../../store/interfaces.js';
+import { SetFAQ, DeleteFAQ, EditFAQ } from '../../store/reducer/FAQ/actions';
 
 const table = {
     columns: [
-        { title: "Question", field: "question", type: "string" },
-        { title: "Answer", field: "answer", type: "string" }
+        { title: 'Question', field: 'question', type: 'string' },
+        { title: 'Answer', field: 'answer', type: 'string' }
     ]
 };
 

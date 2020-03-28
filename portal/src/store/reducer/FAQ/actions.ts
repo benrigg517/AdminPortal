@@ -1,5 +1,5 @@
-import { FAQActions } from "./action-types";
-import { QuestionAndAnswerInterface } from "./interfaces";
+import { FAQActions } from './action-types';
+import { QuestionAndAnswerInterface } from './interfaces';
 
 export function SetFAQ (question: string, answer: string) {
     return {

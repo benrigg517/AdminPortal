@@ -1,11 +1,11 @@
-import * as storage from "redux-storage";
-import { createStore, applyMiddleware } from "redux";
+import * as storage from 'redux-storage';
+import { createStore, applyMiddleware } from 'redux';
 // import { createLogger } from 'redux-logger';
-import { persistStore } from "redux-persist";
-import createEngine from "redux-storage-engine-localstorage";
+import { persistStore } from 'redux-persist';
+import createEngine from 'redux-storage-engine-localstorage';
 
 // Imports: Redux
-import rootReducer from "./reducer/index";
+import rootReducer from './reducer/index';
 
 const reducer = storage.reducer(rootReducer);
 
@@ -13,7 +13,7 @@ const reducer = storage.reducer(rootReducer);
 //
 // Note: The arguments to `createEngine` are different for every engine!
 
-const engine = createEngine("my-save-key");
+const engine = createEngine('my-save-key');
 
 // And with the engine we can create our middleware function. The middleware
 // is responsible for calling `engine.save` with the current state afer

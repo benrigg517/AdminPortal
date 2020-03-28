@@ -1,5 +1,5 @@
-import { AppActions } from "./action-types";
-import { AppInterface } from "./interfaces";
+import { AppActions } from './action-types';
+import { AppInterface } from './interfaces';
 
 export function Login (loginState: boolean) {
     const data: AppInterface = {

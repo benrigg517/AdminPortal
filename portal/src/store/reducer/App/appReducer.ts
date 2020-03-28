@@ -1,5 +1,5 @@
-import { AppInterface } from "./interfaces";
-import { AppActions } from "./action-types";
+import { AppInterface } from './interfaces';
+import { AppActions } from './action-types';
 
 export const appReducer = (
     state: AppInterface = {

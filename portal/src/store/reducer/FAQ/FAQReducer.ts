@@ -1,9 +1,9 @@
-import { QuestionAndAnswerInterface } from "./interfaces";
-import { FAQActions } from "./action-types";
+import { QuestionAndAnswerInterface } from './interfaces';
+import { FAQActions } from './action-types';
 
 export const FAQReducer = (
     state: Array<QuestionAndAnswerInterface> = [
-        { question: "How are you?", answer: "Good", tableData: { id: 0 } }
+        { question: 'How are you?', answer: 'Good', tableData: { id: 0 } }
     ],
     action: any
 ): any => {

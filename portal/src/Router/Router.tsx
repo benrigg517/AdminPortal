@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import Dashboard from "../Pages/dashboard";
-import { Switch, Route, Redirect } from "react-router-dom";
-import About from "../Pages/about";
-import Oops from "../Pages/oops";
-import Home from "../Pages/home";
-import { RouteKeys } from "./RoutePaths";
-import FAQPage from "../Pages/FAQPage";
-import { makeStyles, withStyles, LinearProgress } from "@material-ui/core";
-import SignIn from "../Pages/signIn";
-import { State } from "../store/interfaces";
-import { AppInterface } from "../store/reducer/App/interfaces";
-import { useSelector, useDispatch } from "react-redux";
-import Media from "../Pages/mediaManager";
-import SignUp from "../Pages/signUp";
-import { changeLoading } from "../store/reducer/App/actions";
+import React, { useEffect, useState } from 'react';
+import Dashboard from '../Pages/dashboard';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import About from '../Pages/about';
+import Oops from '../Pages/oops';
+import Home from '../Pages/home';
+import { RouteKeys } from './RoutePaths';
+import FAQPage from '../Pages/FAQPage';
+import { makeStyles, withStyles, LinearProgress } from '@material-ui/core';
+import SignIn from '../Pages/signIn';
+import { State } from '../store/interfaces';
+import { AppInterface } from '../store/reducer/App/interfaces';
+import { useSelector, useDispatch } from 'react-redux';
+import Media from '../Pages/mediaManager';
+import SignUp from '../Pages/signUp';
+import { changeLoading } from '../store/reducer/App/actions';
 
 const useStyles = makeStyles(theme => ({
     toolbar: theme.mixins.toolbar,
@@ -32,10 +32,10 @@ const useStyles = makeStyles(theme => ({
 
 const ColourLinearProgress = withStyles({
     colorPrimary: {
-        backgroundColor: "#ab3040"
+        backgroundColor: '#ab3040'
     },
     barColorPrimary: {
-        backgroundColor: "#f5878a"
+        backgroundColor: '#f5878a'
     }
 })(LinearProgress);
 
@@ -67,7 +67,7 @@ export const Routes = () => {
         switch (authState) {
             case true:
                 return (
-                    <div style={{ display: "flex" }}>
+                    <div style={{ display: 'flex' }}>
                         <>
                             <Dashboard />
                             <main className={classes.content}>

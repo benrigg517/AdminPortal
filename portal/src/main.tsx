@@ -1,9 +1,9 @@
-import React from "react";
-import "./index.css";
-import { Routes } from "./Router/Router";
-import { Provider } from "react-redux";
-import { store } from "./store";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import './index.css';
+import { Routes } from './Router/Router';
+import { Provider } from 'react-redux';
+import { store } from './store';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Main = () => {
     return (
