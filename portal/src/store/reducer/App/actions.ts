@@ -1,7 +1,7 @@
 import { AppActions } from "./action-types";
 import { AppInterface } from "./interfaces";
 
-export function Login(loginState: boolean) {
+export function Login (loginState: boolean) {
     const data: AppInterface = {
         LoggedIn: loginState,
         Loading: false
@@ -13,7 +13,7 @@ export function Login(loginState: boolean) {
     };
 }
 
-export function changeLoading(loading: boolean) {
+export function changeLoading (loading: boolean) {
     const data: AppInterface = {
         LoggedIn: true,
         Loading: loading
