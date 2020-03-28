@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, FunctionComponent } from 'react';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import { IconButton, Modal, Fade, Paper, Typography } from '@material-ui/core';
 
-const MediaViewer = () => {
+interface MediaProps {
+    MediaLink: string;
+}
+
+const MediaViewer: FunctionComponent<MediaProps> = (props: MediaProps) => {
     const [showModal, setShowModal] = useState(false)
 
     const handleClose = (modalShown: boolean) => {
@@ -25,7 +29,7 @@ const MediaViewer = () => {
                             <Typography>
                                 Image
                             </Typography>
-                            <img src={'https://i.imgur.com/4AiXzf8.jpg'}></img>
+                            <img style={{ maxWidth: 1200, maxHeight: 800 }} src={props.MediaLink}></img>
                         </Paper>
                     </div>
                 </Fade>

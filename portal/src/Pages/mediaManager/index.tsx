@@ -34,7 +34,7 @@ const Media = () => {
                 </label>
             </div>
             <div className={classes.root}>
-                <MediaViewer />
+                <MediaViewer MediaLink={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/1024px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg'} />
             </div>
         </div>
     );
